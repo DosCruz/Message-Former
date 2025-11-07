@@ -72,7 +72,7 @@ form.addEventListener("submit", (e) => {
     messageParts.push(`${revenueMessage} ${revenuePlan}`);
 
     if (bestX1 || bestX2 || bestX3) {
-        messageParts.push(`TWITTER/X:\nYour best performing content:`);
+        messageParts.push(`\nTWITTER/X:\nYour best performing content:`);
         [ [bestX1, bestX1Comment], [bestX2, bestX2Comment], [bestX3, bestX3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
@@ -83,7 +83,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (bestIg1 || bestIg2 || bestIg3) {
-        messageParts.push(`INSTAGRAM:\nYour best performing content:`);
+        messageParts.push(`\nINSTAGRAM:\nYour best performing content:`);
         [ [bestIg1, bestIg1Comment], [bestIg2, bestIg2Comment], [bestIg3, bestIg3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
@@ -94,7 +94,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (bestReddit1 || bestReddit2 || bestReddit3) {
-        messageParts.push(`REDDIT:\nYour best performing content:`);
+        messageParts.push(`\nREDDIT:\nYour best performing content:`);
         [ [bestReddit1, bestReddit1Comment], [bestReddit2, bestReddit2Comment], [bestReddit3, bestReddit3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
@@ -105,14 +105,14 @@ form.addEventListener("submit", (e) => {
     }
 
     if (bestYT1 || bestYT2 || bestYT3) {
-        messageParts.push(`YOUTUBE:\nYour best performing content:`);
+        messageParts.push(`\nYOUTUBE:\nYour best performing content:`);
         [ [bestYT1, bestYT1Comment], [bestYT2, bestYT2Comment], [bestYT3, bestYT3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
     }
 
     if (ytSummary) {
-        messageParts.push(`${ytSummary}`);
+        messageParts.push(`\n${ytSummary}`);
     }
 
     if (lastComment) messageParts.push(lastComment);
