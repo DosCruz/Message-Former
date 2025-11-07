@@ -94,7 +94,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (bestReddit1 || bestReddit2 || bestReddit3) {
-        messageParts.push(`INSTAGRAM:\nYour best performing content:`);
+        messageParts.push(`REDDIT:\nYour best performing content:`);
         [ [bestReddit1, bestReddit1Comment], [bestReddit2, bestReddit2Comment], [bestReddit3, bestReddit3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
@@ -105,7 +105,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (bestYT1 || bestYT2 || bestYT3) {
-        messageParts.push(`INSTAGRAM:\nYour best performing content:`);
+        messageParts.push(`YOUTUBE:\nYour best performing content:`);
         [ [bestYT1, bestYT1Comment], [bestYT2, bestYT2Comment], [bestYT3, bestYT3Comment] ].forEach(([link, comment]) => {
             if (link) messageParts.push(`${link}\n${comment}`);
         });
