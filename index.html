@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Former</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="form">
+            <form>
+                <label for="client"><strong>Model Name:</strong></label>
+                <input list="clients" id="client" name="client" placeholder="Start typing a name..." required>
+
+                <datalist id="clients">
+                    <option value="Ali"></option>
+                    <option value="Ali Smiles"></option>
+                    <option value="Asteria"></option>
+                    <option value="Blink"></option>
+                    <option value="Bree"></option>
+                    <option value="Chelsea"></option>
+                    <option value="Clarus"></option>
+                    <option value="Cora"></option>
+                    <option value="Cynn"></option>
+                    <option value="Dallas"></option>
+                    <option value="Darcie"></option>
+                    <option value="Darshelle"></option>
+                    <option value="Davina"></option>
+                    <option value="Ellie"></option>
+                    <option value="Florence"></option>
+                    <option value="Frizzy"></option>
+                    <option value="Harmony"></option>
+                    <option value="Heidi"></option>
+                    <option value="Henna"></option>
+                    <option value="Holly"></option>
+                    <option value="Jade"></option>
+                    <option value="Jay"></option>
+                    <option value="Jenn"></option>
+                    <option value="Joanie"></option>
+                    <option value="Julie"></option>
+                    <option value="Kailyn"></option>
+                    <option value="Kay"></option>
+                    <option value="Kimmy"></option>
+                    <option value="Lana"></option>
+                    <option value="Lauren"></option>
+                    <option value="Lilly"></option>
+                    <option value="Mads"></option>
+                    <option value="Margret"></option>
+                    <option value="Miko"></option>
+                    <option value="Morgan"></option>
+                    <option value="Mystic"></option>
+                    <option value="Mythiccal"></option>
+                    <option value="Nichole"></option>
+                    <option value="Reed"></option>
+                    <option value="River"></option>
+                    <option value="Ruby"></option>
+                    <option value="Saffron"></option>
+                    <option value="Sam"></option>
+                    <option value="Sarah"></option>
+                    <option value="Savannah"></option>
+                    <option value="Scarlett"></option>
+                    <option value="Sofia"></option>
+                    <option value="Taaij"></option>
+                    <option value="Tabitha"></option>
+                    <option value="Tayla"></option>
+                    <option value="Tephie"></option>
+                    <option value="Valeria"></option>
+                    <option value="Vera Blanks"></option>
+                    <option value="Veronica"></option>
+                    <option value="Zalia"></option>
+                </datalist>
+
+                <hr>
+
+                <label><strong>OnlyFans Stats:</strong></label>
+
+                <label>Reach % of Target:</label>
+                <input type="number" id="reach" name="reach" placeholder="e.g. 100" required>
+
+                <label>Action Plan for Reach (Optional):</label>
+                <textarea id="reachPlan" name="reachPlan" placeholder="e.g. To address this..." rows="3"></textarea>
+
+                <br><label>Subs % of Target:</label>
+                <input type="number" id="subs" name="subs" placeholder="e.g. 100" required>
+
+                <label>Action Plan for Subs (Optional):</label>
+                <textarea id="subsPlan" name="subsPlan" placeholder="e.g. To address this..." rows="3"></textarea>
+
+                <br><label>Revenue % of Target:</label>
+                <input type="number" id="revenue" name="revenue" placeholder="e.g. 100" required>
+
+                <label>Action Plan for Revenue (Optional):</label>
+                <textarea id="revenuePlan" name="revenuePlan" placeholder="e.g. To address this..." rows="3"></textarea>
+
+                <br><label>OnlyFans Summary</label>
+                <textarea id="ofSummary" name="ofSummary" rows="3"></textarea>
+
+                <hr>
+
+                <label><strong>Twitter/X Stats:</strong></label>
+                <label>Best Performing Content:</label>
+                <input type="text" id="bestX1" name="bestX1" placeholder="Insert Link 1">
+                <textarea id="bestXComment1" name="bestXComment1" placeholder="Comment for Link 1"></textarea>
+
+                <input type="text" id="bestX2" name="bestX2" placeholder="Insert Link 2">
+                <textarea id="bestXComment2" name="bestXComment2" placeholder="Comment for Link 2"></textarea>
+                
+                <input type="text" id="bestX3" name="bestX3" placeholder="Insert Link 3">
+                <textarea id="bestXComment3" name="bestXComment3" placeholder="Comment for Link 3"></textarea>
+
+                <br><label>Twitter/X Summary</label>
+                <textarea id="xSummary" name="xSummary" placeholder="Enter text here." rows="3"></textarea>
+
+                <hr>
+
+                <label><strong>Instagram Stats:</strong></label>
+                <label>Best Performing Content:</label>
+                <input type="text" id="bestIg1" name="bestIg1" placeholder="Insert Link 1">
+                <textarea id="bestIgComment1" name="bestIgComment1" placeholder="Comment for Link 1"></textarea>
+
+                <input type="text" id="bestIg2" name="bestIg2" placeholder="Insert Link 2">
+                <textarea id="bestIgComment2" name="bestIgComment2" placeholder="Comment for Link 2"></textarea>
+                
+                <input type="text" id="bestIg3" name="bestIg3" placeholder="Insert Link 3">
+                <textarea id="bestIgComment3" name="bestIgComment3" placeholder="Comment for Link 3"></textarea>
+
+                <br><label>Instagram Summary</label>
+                <textarea id="igSummary" name="igSummary" placeholder="Enter text here." rows="3"></textarea>
+
+                <hr>
+
+                <label><strong>Reddit Stats:</strong></label>
+                <label>Best Performing Content:</label>
+                <input type="text" id="bestReddit1" name="bestReddit1" placeholder="Insert Link 1">
+                <textarea id="bestRedditComment1" name="bestRedditComment1" placeholder="Comment for Link 1"></textarea>
+
+                <input type="text" id="bestReddit2" name="bestReddit2" placeholder="Insert Link 2">
+                <textarea id="bestRedditComment2" name="bestRedditComment2" placeholder="Comment for Link 2"></textarea>
+                
+                <input type="text" id="bestReddit3" name="bestReddit3" placeholder="Insert Link 3">
+                <textarea id="bestRedditComment3" name="bestRedditComment3" placeholder="Comment for Link 3"></textarea>
+
+                <br><label>Reddit Summary</label>
+                <textarea id="redditSummary" name="redditSummary" placeholder="Enter text here." rows="3"></textarea>
+
+                <hr>
+
+                <label><strong>YouTube Stats:</strong></label>
+                <label>Best Performing Content:</label>
+                <input type="text" id="bestYT1" name="bestYT1" placeholder="Insert Link 1">
+                <textarea id="bestYTComment1" name="bestYTComment1" placeholder="Comment for Link 1"></textarea>
+
+                <input type="text" id="bestYT2" name="bestYT2" placeholder="Insert Link 2">
+                <textarea id="bestYTComment2" name="bestYTComment2" placeholder="Comment for Link 2"></textarea>
+                
+                <input type="text" id="bestYT3" name="bestYT3" placeholder="Insert Link 3">
+                <textarea id="bestYTComment3" name="bestYTComment3" placeholder="Comment for Link 3"></textarea>
+
+                <br><label>YouTube Summary</label>
+                <textarea id="ytSummary" name="ytSummary" placeholder="Enter text here." rows="3"></textarea>
+
+                <hr>
+
+                <label><strong>Final Comment/Message:</strong></label>
+                <textarea id="lastComment" name="lastComment" placeholder="Enter text here." rows="3"></textarea>
+
+                <br><button type="submit">Generate Message</button>
+            </form>
+        </div>
+
+        <div id="result">
+            <div id="resultContents">Your message will appear here.</div>
+            <button id="copyButton">Copy Message</button>
+        </div>
+        
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
