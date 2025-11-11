@@ -152,3 +152,18 @@ clientInput.addEventListener("keydown", (e) => {
     }
 });
 
+const allOptions = Array.from(clientList.options).map(opt => opt.value);
+
+clientInput.addEventListener("input", () => {
+    const value = clientInput.value.toLowerCase();
+    const filtered = allOptions.filter(name =>
+        name.toLowerCase().startsWith(value)
+    );
+
+    clientList.innerHTML = "";
+    filtered.forEach(name => {
+        const option = document.createElement("option");
+        option.value = name;
+        clientList.appendChild(option);
+    });
+});
