@@ -11,6 +11,19 @@ form.addEventListener("submit", (e) => {
     const subsPlan = form.subsPlan.value;
     const revenue = parseFloat(form.revenue.value);
     const revenuePlan = form.revenuePlan.value;
+    const ofSummary = form.ofSummary.value;
+    const topSpenderIntro = form.topSpenderIntro.value;
+    const topSpender1 = form.topSpender1.value;
+    const topSpender1Info = form.topSpender1Info.value;
+    const topSpender2 = form.topSpender2.value;
+    const topSpender2Info = form.topSpender2Info.value;
+    const topSpender3 = form.topSpender3.value;
+    const topSpender3Info = form.topSpender3Info.value;
+    const topSpender4 = form.topSpender4.value;
+    const topSpender4Info = form.topSpender4Info.value;
+    const topSpender5 = form.topSpender5.value;
+    const topSpender5Info = form.topSpender5Info.value;
+    const topSpenderSummary = form.topSpenderSummary.value;
     const bestX1 = form.bestX1.value;
     const bestX1Comment = form.bestXComment1.value;
     const bestX2 = form.bestX2.value;
@@ -70,6 +83,21 @@ form.addEventListener("submit", (e) => {
     messageParts.push(`${reachMessage} ${reachPlan}`);
     messageParts.push(`${subsMessage} ${subsPlan}`);
     messageParts.push(`${revenueMessage} ${revenuePlan}`);
+
+    if (ofSummary) {
+        messageParts.push(`${ofSummary}`);
+    }
+
+    if (topSpenderIntro) {
+        messageParts.push(`\n${topSpenderIntro}`);
+        [ [topSpender1, topSpender1Info], [topSpender2, topSpender2Info], [topSpender3, topSpender3Info], [topSpender4, topSpender4Info], [topSpender5, topSpender5Info] ].forEach(([spender, info]) => {
+            if (spender) messageParts.push(`${spender}\n${info}`);
+        });
+    }
+
+    if (topSpenderSummary) {
+        messageParts.push(`${topSpenderSummary}`);
+    }
 
     if (bestX1 || bestX2 || bestX3) {
         messageParts.push(`\nTWITTER/X:\nYour best performing content:`);
